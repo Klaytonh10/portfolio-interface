@@ -9,7 +9,15 @@ public abstract class FixedAsset implements Valueable {
         return name;
     }
 
+    public void setName(String name) {
+        this.name = name;
+    }
+
     public double getValue() {
         return marketValue;
+    }
+
+    public void setValue(double value) {
+        this.marketValue = value;
     }
 }

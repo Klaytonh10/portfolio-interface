@@ -1,4 +1,6 @@
-package org.example.finance;
+package org.example;
+
+import org.example.finance.FixedAsset;
 
 public class House extends FixedAsset {
 
