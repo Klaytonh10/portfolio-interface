@@ -13,16 +13,16 @@ public class CreditCard implements Valueable {
     }
 
     public void charge(double amount) {
-
+        this.balance -= amount;
     }
 
-    public void pay() {
-
+    public void pay(double amount) {
+        this.balance += amount;
     }
 
     @Override
     public double getValue() {
-        return balance;
+        return this.balance;
     }
 
 }

@@ -4,7 +4,7 @@ import org.example.finance.Valueable;
 
 import java.util.ArrayList;
 
-public class Portfolio {
+public class Portfolio implements Valueable {
 
     private ArrayList<Valueable> valueables = new ArrayList<>();
 
@@ -12,7 +12,8 @@ public class Portfolio {
         this.valueables.add(valueable);
     }
 
-    double getValue() {
+    @Override
+    public double getValue() {
         double value = 0;
 
         for(Valueable a: valueables) {

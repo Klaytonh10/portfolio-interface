@@ -1,13 +1,15 @@
 package org.example.finance;
 
-public class BankAccount extends LiquidAsset {
+public class BankAccount implements Valueable {
 
+    private String name;
     private String accountNumber;
+    private double balance;
 
     public BankAccount(String name, String accountNumber, double balance) {
-        super.name = name;
+        this.name = name;
         this.accountNumber = accountNumber;
-        super.balance = balance;
+        this.balance = balance;
     }
 
     @Override
@@ -16,11 +18,11 @@ public class BankAccount extends LiquidAsset {
     }
 
     public void deposit(double amount) {
-        super.deposit(amount);
+        this.balance += amount;
     }
 
     public void withdraw(double amount) {
-        super.withdrawl(amount);
+        this.balance -= amount;
     }
 
 }
