@@ -17,16 +17,4 @@ public class House extends FixedAsset {
         return 0;
     }
 
-
-    public double compareTo(House that) {
-        double output = 0;
-        if(this.squareFeet < that.squareFeet) {
-            return -1;
-        }
-        if(this.squareFeet > that.squareFeet) {
-            return 1;
-        }
-        return output;
-    }
-
 }

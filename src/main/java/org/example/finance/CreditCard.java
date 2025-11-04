@@ -1,24 +1,28 @@
 package org.example.finance;
 
-public class CreditCard extends LiquidAsset {
+public class CreditCard implements Valueable {
 
     private String name;
     private String accountNumber;
     private double balance;
 
-
-
     public CreditCard(String name, String accountNumber, double balance) {
-
+        this.name = name;
+        this.accountNumber = accountNumber;
+        this.balance = balance;
     }
 
     public void charge(double amount) {
 
     }
 
+    public void pay() {
+
+    }
+
     @Override
     public double getValue() {
-        return 0;
+        return balance;
     }
 
 }
