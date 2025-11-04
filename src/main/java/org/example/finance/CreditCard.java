@@ -1,6 +1,6 @@
 package org.example.finance;
 
-public class CreditCard implements Valueable {
+public class CreditCard implements Valuable {
 
     private String name;
     private String accountNumber;

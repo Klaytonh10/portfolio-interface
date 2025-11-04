@@ -1,6 +1,6 @@
 package org.example.finance;
 
-public interface Valueable {
+public interface Valuable {
 
     double getValue();
 }

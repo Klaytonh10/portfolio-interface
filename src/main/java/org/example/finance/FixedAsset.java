@@ -1,6 +1,6 @@
 package org.example.finance;
 
-public abstract class FixedAsset implements Valueable {
+public abstract class FixedAsset implements Valuable {
 
     String name;
     double marketValue;

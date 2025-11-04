@@ -1,14 +1,14 @@
 package org.example;
 
-import org.example.finance.Valueable;
+import org.example.finance.Valuable;
 
 import java.util.ArrayList;
 
-public class Portfolio implements Valueable {
+public class Portfolio implements Valuable {
 
-    private ArrayList<Valueable> valueables = new ArrayList<>();
+    private ArrayList<Valuable> valueables = new ArrayList<>();
 
-    public void addAsset(Valueable valueable) {
+    public void addAsset(Valuable valueable) {
         this.valueables.add(valueable);
     }
 
@@ -16,7 +16,7 @@ public class Portfolio implements Valueable {
     public double getValue() {
         double value = 0;
 
-        for(Valueable a: valueables) {
+        for(Valuable a: valueables) {
             value += a.getValue();
         }
         return value;

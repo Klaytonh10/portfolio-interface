@@ -1,6 +1,6 @@
 package org.example.finance;
 
-public abstract class LiquidAsset implements Valueable {
+public abstract class LiquidAsset implements Valuable {
 
     String name;
     double balance = 0;
