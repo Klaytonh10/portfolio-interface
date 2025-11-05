@@ -3,6 +3,7 @@ package org.example;
 import org.example.finance.Valuable;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class Portfolio {
 
@@ -32,6 +33,10 @@ public class Portfolio {
             }
         }
         return mostValuableThing;
+    }
+
+    Valuable getMostValuableBySort() {
+        ArrayList<Valuable> sorted = Collections.sort(valueables);
     }
 
 }
