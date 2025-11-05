@@ -35,8 +35,6 @@ public class Portfolio {
         return mostValuableThing;
     }
 
-    Valuable getMostValuableBySort() {
-        ArrayList<Valuable> sorted = Collections.sort(valueables);
-    }
+
 
 }
