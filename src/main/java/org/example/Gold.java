@@ -6,12 +6,14 @@ public class Gold extends FixedAsset {
 
     private double weight;
 
+    private static double pricePerOunce = 3976.89;
+
     public Gold(double weight) {
         this.weight = weight;
     }
 
     public double getValue() {
-        return 0;
+        return weight * pricePerOunce;
     }
 
 }
